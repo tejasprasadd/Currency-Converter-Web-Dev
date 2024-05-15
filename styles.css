@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: aquamarine;
+}
+nav {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 800;
+  display: flex;
+  font-size: 14px;
+  padding: 16px;
+  background-color: rgba(169, 125, 210, 0.637);
+}
+.logo h1 {
+  font-size: 16px;
+  font-weight: 900;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 23px;
+}
+nav ul li {
+  list-style: none;
+  margin: 0 23px;
+}
+nav li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  transition: all;
+  transition-duration: 7 00ms;
+}
+nav li a:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+nav ul {
+  display: flex;
+}
+.container {
+  min-height: 100vh;
+  font-family: "Roboto Flex", sans-serif;
+  max-width: 80vw;
+  margin: auto;
+}
+footer {
+  background-color: rgb(49, 49, 49);
+  color: white;
+  display: flex;
+  padding: 12px;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-family: "Noto Sans", sans-serif;
+}
+.container h1 ,h2{
+  margin: 23px;
+}
+.container form input[type="number"],
+select,
+label {
+  font-size: 25px;
+  margin-bottom: 23px;
+  width: 23vw;
+}
+.container form {
+  display: flex;
+  flex-direction: column;
+}
+.container form label {
+  font-size: 25px;
+}
+.btn {
+  width: 144px;
+  padding: 6px 8px;
+  background-color: rgba(169, 125, 210, 0.637);
+  border-radius: 13px;
+  color: rgb(0, 54, 0);
+  border: 2px solid rgb(0, 167, 111);
+  font-family: "Noto Sans", sans-serif;
+  font-size: 18px;
+  cursor:pointer;
+}
+.output table{
+    width:50vw;
+    text-align: center;
+    border:2px solid black; 
+    font-size: 20px;
+    background-color: lightcyan;
+}
+.output{
+    display:none;
+}
+@media (max-width: 600px) {
+            
+
+    nav {
+        flex-direction: column;
+        font-size: 14px;
+    }
+
+    nav ul li {
+        margin: 5px 13px;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    .container {
+        max-width: 95vw;
+    }
+
+    .container form input[type='number'],
+    select,
+    label {
+        width: 80vw;
+    }
+}
